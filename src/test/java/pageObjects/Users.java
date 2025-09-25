@@ -13,7 +13,6 @@ public class Users extends BasePage{
     private final By restrictbtn = By.xpath("//button[normalize-space()='Restrict']");
     private final By deletebtn = By.xpath("//button[normalize-space()='Delete']");
     private final By restricteduser = By.xpath("//button[normalize-space()='Restricted Users']");
-    private final By unrestrictbtn = By.xpath("//button[normalize-space()='Unrestrict']");
 
     //active users
     public void activeuserstab() throws InterruptedException {
