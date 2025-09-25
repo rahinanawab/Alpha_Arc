@@ -13,6 +13,8 @@ public class Users extends BasePage{
     private final By restrictbtn = By.xpath("//button[normalize-space()='Restrict']");
     private final By deletebtn = By.xpath("//button[normalize-space()='Delete']");
     private final By restricteduser = By.xpath("//button[normalize-space()='Restricted Users']");
+    private final By salesuser = By.xpath("//button[normalize-space()='Sales Tab Request']");
+
 
     //active users
     public void activeuserstab() throws InterruptedException {
@@ -68,8 +70,12 @@ public class Users extends BasePage{
         WebElement delete = driver.findElement(By.xpath("//button[normalize-space()='Delete']"));
         delete.click();
         driver.findElement(deletebtn).click();
-
-
+        driver.findElement(searchuserField).clear();
+    }
+    //sales tab request users
+    public void salestab() throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+        driver.findElement(salesuser).click();
     }
 }
 

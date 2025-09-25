@@ -10,5 +10,6 @@ public class UsersTest extends BaseTest{
         users = new Users();
         users.activeuserstab();
         users.restrictuserstab();
+        users.salestab();
     }
 }
