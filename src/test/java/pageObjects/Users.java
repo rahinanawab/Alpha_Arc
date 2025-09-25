@@ -14,7 +14,7 @@ public class Users extends BasePage{
     private final By deletebtn = By.xpath("//button[normalize-space()='Delete']");
     private final By restricteduser = By.xpath("//button[normalize-space()='Restricted Users']");
     private final By salesuser = By.xpath("//button[normalize-space()='Sales Tab Request']");
-
+    private final By viewbtn = By.xpath("//button[normalize-space()='View']");
 
     //active users
     public void activeuserstab() throws InterruptedException {
@@ -79,6 +79,7 @@ public class Users extends BasePage{
         driver.findElement(searchuserField).clear();
 
         driver.findElement(searchuserField).sendKeys("Sophia");
+        driver.findElement(viewbtn).click();
     }
 }
 
