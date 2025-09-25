@@ -76,6 +76,9 @@ public class Users extends BasePage{
     public void salestab() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         driver.findElement(salesuser).click();
+        driver.findElement(searchuserField).clear();
+
+        driver.findElement(searchuserField).sendKeys("Sophia");
     }
 }
 
