@@ -8,6 +8,7 @@ public class BaseTest {
     protected Login loginPage;
     protected Users users;
     protected Team team;
+    protected DailyContent dailyContent;
 
     @BeforeSuite
     public void setUp() {
@@ -15,8 +16,7 @@ public class BaseTest {
         loginPage = new Login();
         users = new Users();
         team = new Team();
-
-
+        dailyContent = new DailyContent();
     }
 //    @AfterSuite
 //    public void tearDownSuite() {

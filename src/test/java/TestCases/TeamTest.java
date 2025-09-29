@@ -2,7 +2,6 @@ package TestCases;
 
 import org.testng.annotations.Test;
 import pageObjects.Team;
-import pageObjects.Users;
 
 public class TeamTest extends BaseTest{
     @Test(priority = 3, dependsOnMethods = "TestCases.LoginTest.testLogin")
