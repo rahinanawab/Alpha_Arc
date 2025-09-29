@@ -5,7 +5,7 @@ import pageObjects.DailyContent;
 
 public class DailyContentTest extends BaseTest{
     @Test(priority = 4, dependsOnMethods = "TestCases.LoginTest.testLogin")
-    public void dailycontents() throws InterruptedException {
+    public void dailycontents() {
         dailyContent = new DailyContent();
         dailyContent.content();
     }
