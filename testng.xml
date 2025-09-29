@@ -6,6 +6,7 @@
             <class name="TestCases.LoginTest"/>
             <class name="TestCases.UsersTest"/>
             <class name="TestCases.TeamTest"/>
+            <class name="TestCases.DailyContentTest"/>
         </classes>
     </test>
 </suite>
